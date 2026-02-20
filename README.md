@@ -46,4 +46,57 @@ public class Code {
 <img width="391" height="152" alt="image" src="https://github.com/user-attachments/assets/8fecea76-4e40-43ca-bd6b-82a8088b606c" />
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+public class forloop {
+    public static void main(String[] args)
+    {
+    int n = 5;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            System.out.print("*");
+        }
+        System.out.println("\n");
+    }
+    
+}
+}
+```
+
+
+<img width="326" height="201" alt="image" src="https://github.com/user-attachments/assets/f0e50219-4c4c-4305-8f87-27fb6d3c4e29" />
+
+
     
