@@ -1,3 +1,10 @@
+[Program -1 Wap for calculator](#assi-1)
+
+[Program -2 Wap demonstrating forloop](#assi-2)
+
+
+
+##assi-1
 ```
 public class Code {
     public static void main(String[] args)
@@ -47,36 +54,7 @@ public class Code {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##assi-2
 ```
 public class forloop {
     public static void main(String[] args)
