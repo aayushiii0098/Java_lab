@@ -4,7 +4,7 @@
 
 
 
-##assi-1
+## assi-1
 ```
 public class Code {
     public static void main(String[] args)
@@ -54,7 +54,7 @@ public class Code {
 
 
 
-##assi-2
+## assi-2
 ```
 public class forloop {
     public static void main(String[] args)
