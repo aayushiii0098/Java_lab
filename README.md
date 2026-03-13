@@ -2,6 +2,8 @@
 
 [Program -2 Wap demonstrating forloop](#assi-2)
 
+[Program -3 Wap for Calculation using methods and additional classes](#assi-3)
+
 
 
 ## assi-1
@@ -75,6 +77,52 @@ public class forloop {
 
 
 <img width="326" height="201" alt="image" src="https://github.com/user-attachments/assets/f0e50219-4c4c-4305-8f87-27fb6d3c4e29" />
+
+## assi-3
+```
+
+// Additional class
+class Calculator {
+
+    // Method for addition
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Method for subtraction
+    int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // Method for multiplication
+    int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Method for division
+    int divide(int a, int b) {
+        return a / b;
+    }
+}
+
+// Main class
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+
+        Calculator calc = new Calculator();
+
+        int a = 20;
+        int b = 10;
+
+        System.out.println("Addition = " + calc.add(a, b));
+        System.out.println("Subtraction = " + calc.subtract(a, b));
+        System.out.println("Multiplication = " + calc.multiply(a, b));
+        System.out.println("Division = " + calc.divide(a, b));
+    }
+}
+```
+
+
 
 
     
