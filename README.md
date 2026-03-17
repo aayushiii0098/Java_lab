@@ -124,6 +124,8 @@ public class ArithmeticOperations {
     }
 }
 ```
+<img width="276" height="88" alt="image" src="https://github.com/user-attachments/assets/58aa9e03-4d7b-41bc-9394-f9a6b1a68692" />
+
 
 ## assi-4
 ```
@@ -181,6 +183,7 @@ public class AddDistance
     }
 }
 ```
+<img width="258" height="26" alt="image" src="https://github.com/user-attachments/assets/05e24990-7fea-4e41-a2f0-18c2385b3231" />
 
 ## assi-5
 
@@ -217,6 +220,8 @@ public class AddDistance
     }
 }
 ```
+<img width="235" height="20" alt="image" src="https://github.com/user-attachments/assets/1fbc1843-951c-48f7-a93c-9717b49d7e5c" />
+
 
 ## assi-6
 ```
