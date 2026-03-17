@@ -8,6 +8,7 @@
 
 [Program -5 Wap to add two distances where each distance is given in m and cm](#assi-5)
 
+[Program -6 Wap to add two times where each time is given in hrs,mins and secs](#assi-6)
 
 ## assi-1
 ```
@@ -225,8 +226,50 @@ public class AddDistance
 
 ## assi-6
 ```
+class Time
+{
+    int hr, min, sec;
+}
+
+public class AddTime
+{
+    public static void main(String args[])
+    {
+        Time t1 = new Time();
+        Time t2 = new Time();
+        Time sum = new Time();
+
+        t1.hr = 2;
+        t1.min = 45;
+        t1.sec = 50;
+
+        t2.hr = 3;
+        t2.min = 20;
+        t2.sec = 30;
+
+        sum.sec = t1.sec + t2.sec;
+        sum.min = t1.min + t2.min;
+        sum.hr = t1.hr + t2.hr;
+
+        if(sum.sec >= 60)
+        {
+            sum.min = sum.min + 1;
+            sum.sec = sum.sec - 60;
+        }
+
+        if(sum.min >= 60)
+        {
+            sum.hr = sum.hr + 1;
+            sum.min = sum.min - 60;
+        }
+
+        System.out.println("Total Time = " + sum.hr + " hr " + sum.min + " min " + sum.sec + " sec");
+    }
+}
 
 ```
+<img width="279" height="26" alt="image" src="https://github.com/user-attachments/assets/7189f6e3-dd79-450f-a3fc-69d008d55c44" />
+
 
 
 
