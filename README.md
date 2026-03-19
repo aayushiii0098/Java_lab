@@ -14,6 +14,7 @@
 
 [Program -8 Wap to do reverse of 1D array](#assi-8)
 
+[Program -9 Wap to demonsrate all 3 types of inheritance with minimum code](#assi-9)
 
 ## assi-1
 ```
@@ -337,8 +338,50 @@ public class ReverseDemo {
 
 ## assi-9
 ```
+// Parent class
+class Vehicle {
+    void showVehicle() {
+        System.out.println("This is a Vehicle");
+    }
+}
 
+// Single inheritance (TwoWheeler inherits Vehicle)
+class TwoWheeler extends Vehicle {
+    void showTwoWheeler() {
+        System.out.println("This is a Two Wheeler");
+    }
+}
+
+// Multilevel inheritance (Scooty inherits TwoWheeler → Vehicle)
+class Scooty extends TwoWheeler {
+    void showScooty() {
+        System.out.println("This is a Scooty");
+    }
+}
+
+// Hierarchical inheritance (Car also inherits Vehicle)
+class Car extends Vehicle {
+    void showCar() {
+        System.out.println("This is a Car");
+    }
+}
+
+// Main class
+public class InheritanceDemo {
+    public static void main(String[] args) {
+
+        Scooty s = new Scooty();   // multilevel
+        s.showVehicle();
+        s.showTwoWheeler();
+        s.showScooty();
+
+        Car c = new Car();         // hierarchical
+        c.showVehicle();
+        c.showCar();
+    }
+}
 ```
+<img width="286" height="94" alt="image" src="https://github.com/user-attachments/assets/8945ffcf-e651-40a9-9a37-5f09242fdde1" />
 
 
 
