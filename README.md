@@ -10,6 +10,8 @@
 
 [Program -6 Wap to add two times where each time is given in hrs,mins and secs](#assi-6)
 
+[Program -7 Wap to add two times where each time is given in hrs and mins](#assi-7)
+
 ## assi-1
 ```
 public class Code {
@@ -269,6 +271,45 @@ public class AddTime
 
 ```
 <img width="279" height="26" alt="image" src="https://github.com/user-attachments/assets/7189f6e3-dd79-450f-a3fc-69d008d55c44" />
+
+## assi-6
+```
+class Time
+{
+int hr,min;
+}
+
+public class AddTime
+{
+public static void main(String[] args)
+{
+Time t1=new Time();
+Time t2=new Time();
+Time sum=new Time();
+
+t1.hr=2;
+t1.min=45;
+t2.hr=5;
+t2.min=56;
+sum.min=t1.min+t2.min;
+sum.hr=t1.hr+t2.hr;
+
+if(sum.min>=60)
+{
+sum.hr+=1;
+sum.min-=60;
+}
+
+System.out.println("Total time =" +sum.hr +"hr"+sum.min+"min");
+}
+}
+```
+<img width="226" height="21" alt="image" src="https://github.com/user-attachments/assets/1f85042b-7b98-4362-ae7e-a6d7dcc946dd" />
+
+## assi-7
+```
+
+```
 
 
 
