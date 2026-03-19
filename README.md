@@ -12,6 +12,9 @@
 
 [Program -7 Wap to add two times where each time is given in hrs and mins](#assi-7)
 
+[Program -8 Wap to do reverse of 1D array](#assi-8)
+
+
 ## assi-1
 ```
 public class Code {
@@ -272,7 +275,7 @@ public class AddTime
 ```
 <img width="279" height="26" alt="image" src="https://github.com/user-attachments/assets/7189f6e3-dd79-450f-a3fc-69d008d55c44" />
 
-## assi-6
+## assi-7
 ```
 class Time
 {
@@ -306,11 +309,36 @@ System.out.println("Total time =" +sum.hr +"hr"+sum.min+"min");
 ```
 <img width="226" height="21" alt="image" src="https://github.com/user-attachments/assets/1f85042b-7b98-4362-ae7e-a6d7dcc946dd" />
 
-## assi-7
+## assi-8
+```
+class ArrayRev {
+
+    int arr[] = {1, 2, 3, 4, 5};
+
+    void reverse() {
+        for(int i = arr.length - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+}
+
+public class ReverseDemo {
+
+    public static void main(String[] args) {
+
+        ArrayRev obj = new ArrayRev();
+
+        System.out.print("Reversed array: ");
+        obj.reverse();
+    }
+}
+```
+<img width="204" height="35" alt="image" src="https://github.com/user-attachments/assets/4b479d93-a031-4347-9458-e20cc09e5779" />
+
+## assi-9
 ```
 
 ```
-
 
 
 
