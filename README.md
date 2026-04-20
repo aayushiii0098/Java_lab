@@ -383,6 +383,82 @@ public class InheritanceDemo {
 ```
 <img width="286" height="94" alt="image" src="https://github.com/user-attachments/assets/8945ffcf-e651-40a9-9a37-5f09242fdde1" />
 
+##  assi-10
+```
+import java.util.Scanner;
+
+public class AllPrograms {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number for factorial: ");
+        int n = sc.nextInt();
+        int fact = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        System.out.println("Factorial = " + fact);
+
+        System.out.print("\nEnter number to check Armstrong: ");
+        int num = sc.nextInt();
+        int temp = num, sum = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += digit * digit * digit;
+            temp /= 10;
+        }
+
+        if (sum == num)
+            System.out.println("Armstrong Number");
+        else
+            System.out.println("Not Armstrong");
+
+        System.out.print("\nEnter number to check Palindrome: ");
+        int p = sc.nextInt();
+        int rev = 0, original = p;
+
+        while (p > 0) {
+            int digit = p % 10;
+            rev = rev * 10 + digit;
+            p /= 10;
+        }
+
+        if (rev == original)
+            System.out.println("Palindrome");
+        else
+            System.out.println("Not Palindrome");
+
+        System.out.print("\nEnter number of terms for Fibonacci: ");
+        int terms = sc.nextInt();
+        int a = 0, b = 1;
+
+        System.out.print("Fibonacci Series: ");
+        for (int i = 1; i <= terms; i++) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+
+        System.out.print("\n\nEnter rows for pattern: ");
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
+}
+```
+<img width="299" height="274" alt="image" src="https://github.com/user-attachments/assets/7f8422f0-3352-4854-bf27-3c65b65c0b74" />
+
+
 
 
 
