@@ -573,9 +573,126 @@ public class MatrixOperations {
 <img width="304" height="425" alt="image" src="https://github.com/user-attachments/assets/e169e275-1a81-4f7f-969d-62b02c35080f" />
 
 ## assi-12
+Without thread
 ```
+class A {
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A: " + i);
+        }
+    }
+}
 
+class B {
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B: " + i);
+        }
+    }
+}
+
+class C {
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C: " + i);
+        }
+    }
+}
+
+public class WithoutThread {
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B();
+        C c = new C();
+
+        a.print();
+        b.print();
+        c.print();
+    }
+}
 ```
+<img width="1042" height="616" alt="image" src="https://github.com/user-attachments/assets/1724f506-5f4d-4faa-bb16-5687dc1f8f8d" />
+
+With Thread
+```
+class A extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A: " + i);
+        }
+    }
+}
+
+class B extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B: " + i);
+        }
+    }
+}
+
+class C extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C: " + i);
+        }
+    }
+}
+
+public class WithThread {
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B();
+        C c = new C();
+
+        a.start();
+        b.start();
+        c.start();
+    }
+}
+```
+<img width="1055" height="551" alt="image" src="https://github.com/user-attachments/assets/a7e0a600-a5a9-44f0-a6f8-ce2cec034d80" />
+
+Runnable Interface
+```
+class A implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A: " + i);
+        }
+    }
+}
+
+class B implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B: " + i);
+        }
+    }
+}
+
+class C implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C: " + i);
+        }
+    }
+}
+
+public class RunnableDemo {
+    public static void main(String[] args) {
+        Thread t1 = new Thread(new A());
+        Thread t2 = new Thread(new B());
+        Thread t3 = new Thread(new C());
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+```
+<img width="1076" height="569" alt="image" src="https://github.com/user-attachments/assets/f6ff5b47-0fe4-49d8-aa30-00b4c19def01" />
+
 
 
 
