@@ -18,6 +18,9 @@
 
 [Program -10 Wap to collect the code from the internet for any five programs of c language (Fact,armstrong,palindrome,fibonacci,pattern)](#assi-10)
 
+[Program -11 Wap a class with multiple methods to perform matrix operations (tranpose,addition,sum of rows, sum of columns,sum of diagonal)](#assi-11)
+
+
 
 ## assi-1
 ```
@@ -460,6 +463,119 @@ public class AllPrograms {
 }
 ```
 <img width="299" height="274" alt="image" src="https://github.com/user-attachments/assets/7f8422f0-3352-4854-bf27-3c65b65c0b74" />
+
+## assi-11
+```
+import java.util.Scanner;
+
+public class MatrixOperations {
+
+    public static void transpose(int[][] a, int r, int c) {
+        int[][] t = new int[c][r];
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                t[j][i] = a[i][j];
+            }
+        }
+
+        System.out.println("Transpose:");
+        for (int i = 0; i < c; i++) {
+            for (int j = 0; j < r; j++) {
+                System.out.print(t[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void addition(int[][] a, int[][] b, int r, int c) {
+        int[][] sum = new int[r][c];
+        System.out.println("Addition:");
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                sum[i][j] = a[i][j] + b[i][j];
+                System.out.print(sum[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void sumRows(int[][] a, int r, int c) {
+        for (int i = 0; i < r; i++) {
+            int sum = 0;
+            for (int j = 0; j < c; j++) {
+                sum += a[i][j];
+            }
+            System.out.println("Sum of row " + (i + 1) + " = " + sum);
+        }
+    }
+
+    public static void sumCols(int[][] a, int r, int c) {
+        for (int j = 0; j < c; j++) {
+            int sum = 0;
+            for (int i = 0; i < r; i++) {
+                sum += a[i][j];
+            }
+            System.out.println("Sum of column " + (j + 1) + " = " + sum);
+        }
+    }
+
+    public static void sumDiagonal(int[][] a, int n) {
+        int primary = 0, secondary = 0;
+
+        for (int i = 0; i < n; i++) {
+            primary += a[i][i];
+            secondary += a[i][n - i - 1];
+        }
+
+        System.out.println("Primary Diagonal Sum = " + primary);
+        System.out.println("Secondary Diagonal Sum = " + secondary);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter rows and columns: ");
+        int r = sc.nextInt();
+        int c = sc.nextInt();
+
+        int[][] a = new int[r][c];
+        int[][] b = new int[r][c];
+
+        System.out.println("Enter elements of Matrix A:");
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                a[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Enter elements of Matrix B:");
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                b[i][j] = sc.nextInt();
+            }
+        }
+
+        transpose(a, r, c);
+        addition(a, b, r, c);
+        sumRows(a, r, c);
+        sumCols(a, r, c);
+
+        if (r == c) {
+            sumDiagonal(a, r);
+        } else {
+            System.out.println("Diagonal sum only for square matrix");
+        }
+
+        sc.close();
+    }
+}
+```
+<img width="304" height="425" alt="image" src="https://github.com/user-attachments/assets/e169e275-1a81-4f7f-969d-62b02c35080f" />
+
+## assi-12
+```
+
+```
 
 
 
