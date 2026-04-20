@@ -16,7 +16,7 @@
 
 [Program -9 Wap to demonsrate all 3 types of inheritance with minimum code](#assi-9)
 
-[Program -10 Wap to collect the code from the internet for any five programs of c language (Fact,armstrong,palindrome,fibonacci,pattern](#assi-10)
+[Program -10 Wap to collect the code from the internet for any five programs of c language (Fact,armstrong,palindrome,fibonacci,pattern)](#assi-10)
 
 
 ## assi-1
