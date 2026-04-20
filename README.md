@@ -794,6 +794,96 @@ public class AddSwing {
 ```
 <img width="341" height="292" alt="image" src="https://github.com/user-attachments/assets/4ff180f6-10f6-4f8e-b00d-9283fe41e415" />
 
+## assi-15
+```
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.sql.*;
+
+public class RegistrationForm extends JFrame implements ActionListener {
+
+    JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9,t10;
+    JButton b;
+
+    RegistrationForm() {
+        setLayout(new GridLayout(11,2));
+
+        t1=new JTextField();
+        t2=new JTextField();
+        t3=new JTextField();
+        t4=new JTextField();
+        t5=new JTextField();
+        t6=new JTextField();
+        t7=new JTextField();
+        t8=new JTextField();
+        t9=new JTextField();
+        t10=new JTextField();
+
+        add(new JLabel("Name")); add(t1);
+        add(new JLabel("Email")); add(t2);
+        add(new JLabel("Phone")); add(t3);
+        add(new JLabel("Address")); add(t4);
+        add(new JLabel("City")); add(t5);
+        add(new JLabel("State")); add(t6);
+        add(new JLabel("Country")); add(t7);
+        add(new JLabel("Username")); add(t8);
+        add(new JLabel("Password")); add(t9);
+        add(new JLabel("Age")); add(t10);
+
+        b=new JButton("Register");
+        add(b);
+
+        b.addActionListener(this);
+
+        setSize(400,400);
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        try {
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            Connection con = DriverManager.getConnection(
+                "jdbc:oracle:thin:@localhost:1521:xe", "swing", "swing123");
+
+            PreparedStatement ps = con.prepareStatement(
+                "insert into users values(?,?,?,?,?,?,?,?,?,?)");
+
+            ps.setString(1, t1.getText());
+            ps.setString(2, t2.getText());
+            ps.setString(3, t3.getText());
+            ps.setString(4, t4.getText());
+            ps.setString(5, t5.getText());
+            ps.setString(6, t6.getText());
+            ps.setString(7, t7.getText());
+            ps.setString(8, t8.getText());
+            ps.setString(9, t9.getText());
+            ps.setString(10, t10.getText());
+
+            int x = ps.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Inserted: " + x);
+
+            con.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        new RegistrationForm();
+    }
+}
+
+```
+<img width="1001" height="422" alt="image" src="https://github.com/user-attachments/assets/a4d9912e-8354-4b04-963e-553b7ff1469f" />
+
+<img width="384" height="381" alt="image" src="https://github.com/user-attachments/assets/784e4d7e-f138-4380-8d58-842e4d329313" />
+
+
+
 
 
 
