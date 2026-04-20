@@ -693,6 +693,110 @@ public class RunnableDemo {
 ```
 <img width="1076" height="569" alt="image" src="https://github.com/user-attachments/assets/f6ff5b47-0fe4-49d8-aa30-00b4c19def01" />
 
+## assi-13
+```
+class A extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A: " + i);
+        }
+    }
+}
+
+class B extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B: " + i);
+        }
+    }
+}
+
+class C extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C: " + i);
+        }
+    }
+}
+
+public class JoinDemo {
+    public static void main(String[] args) throws InterruptedException {
+        A t1 = new A();
+        B t2 = new B();
+        C t3 = new C();
+
+        t1.start();
+        t1.join();
+
+        t2.start();
+        t2.join();
+
+        t3.start();
+    }
+}
+```
+join() method is used to achieve synchronization by making one thread wait for another thread to finish execution.
+
+<img width="1006" height="709" alt="image" src="https://github.com/user-attachments/assets/8aa3fb7b-4a5b-4dbf-ace8-06ba04c6e28f" />
+<img width="1216" height="704" alt="image" src="https://github.com/user-attachments/assets/2d3e7d8e-378a-4ca3-b595-cb5719c91f63" />
+<img width="1279" height="708" alt="image" src="https://github.com/user-attachments/assets/63fc6813-2d8e-4a6b-96e2-c46db6d2167b" />
+
+## assi-14
+```
+import javax.swing.*;
+import java.awt.event.*;
+
+public class AddSwing {
+    public static void main(String[] args) {
+
+        JFrame f = new JFrame("Addition");
+
+        JLabel l1 = new JLabel("Enter First Number:");
+        l1.setBounds(30, 30, 150, 30);
+
+        JTextField t1 = new JTextField();
+        t1.setBounds(180, 30, 100, 30);
+
+        JLabel l2 = new JLabel("Enter Second Number:");
+        l2.setBounds(30, 70, 150, 30);
+
+        JTextField t2 = new JTextField();
+        t2.setBounds(180, 70, 100, 30);
+
+        JButton b = new JButton("Add");
+        b.setBounds(100, 120, 80, 30);
+
+        JLabel result = new JLabel("Result:");
+        result.setBounds(30, 170, 200, 30);
+
+        b.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                int a = Integer.parseInt(t1.getText());
+                int b = Integer.parseInt(t2.getText());
+                int sum = a + b;
+                result.setText("Result: " + sum);
+            }
+        });
+
+        f.add(l1);
+        f.add(t1);
+        f.add(l2);
+        f.add(t2);
+        f.add(b);
+        f.add(result);
+
+        f.setSize(350, 300);
+        f.setLayout(null);
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
+```
+<img width="341" height="292" alt="image" src="https://github.com/user-attachments/assets/4ff180f6-10f6-4f8e-b00d-9283fe41e415" />
+
+
+
+
 
 
 
