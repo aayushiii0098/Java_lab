@@ -1122,6 +1122,8 @@ public class CalculatorSwing extends JFrame implements ActionListener {
     }
 }
 ```
+<img width="312" height="421" alt="image" src="https://github.com/user-attachments/assets/77e274a7-e126-443e-a852-cfc7a0038821" />
+
 ## assi-17
 ```
 import javax.swing.*;
@@ -1266,6 +1268,8 @@ public class MatrixAdditionSwing extends JFrame implements ActionListener {
     }
 }
 ```
+<img width="623" height="465" alt="image" src="https://github.com/user-attachments/assets/dae5ed82-bd96-4820-ba20-f5214fe26c5a" />
+
 ## assi-18
 ```
 import javax.swing.*;
@@ -1398,6 +1402,8 @@ public class ShapeButtonsFrame extends JFrame implements ActionListener {
     }
 }
 ```
+<img width="664" height="443" alt="image" src="https://github.com/user-attachments/assets/6d63966f-0c9c-4e9c-8240-3ce02614a7f8" />
+
 
 ## assi-19
 ```
@@ -1547,6 +1553,8 @@ public class PaintBrushApp extends JFrame {
     }
 }
 ```
+<img width="885" height="590" alt="image" src="https://github.com/user-attachments/assets/0c147ef9-96de-4ff3-87c4-9bb6cbdc2475" />
+
 
 ## assi-20
 ```
@@ -1603,6 +1611,8 @@ public class TestPackage {
     }
 }
 ```
+<img width="304" height="79" alt="image" src="https://github.com/user-attachments/assets/37e5d39b-4148-4176-be6e-b8295eaa1787" />
+
 
 ## assi-21
 ```
@@ -1636,6 +1646,8 @@ public class TestSubPackage {
     }
 }
 ```
+<img width="324" height="46" alt="image" src="https://github.com/user-attachments/assets/ddb816ab-b65f-4476-8313-c6e36fa494d9" />
+
 
 ## assi-22
 ```
@@ -1681,6 +1693,8 @@ public class ExceptionDemo {
     }
 }
 ```
+<img width="258" height="91" alt="image" src="https://github.com/user-attachments/assets/8ad1cfc1-464c-411c-a0a5-891956b9fcf9" />
+
 
 ## assi-23
 ```
@@ -1723,6 +1737,8 @@ public class StudentAgeTest {
     }
 }
 ```
+<img width="272" height="44" alt="image" src="https://github.com/user-attachments/assets/bf492864-d64c-4e07-867d-e97e80c685fe" />
+
 
 ## assi-24
 ```
@@ -1751,6 +1767,8 @@ public class ByteStreamDemo {
     }
 }
 ```
+<img width="415" height="43" alt="image" src="https://github.com/user-attachments/assets/187836cb-4cbf-4ced-8ac7-b92e768e9240" />
+
 
 ```
 import java.io.*;
@@ -1761,7 +1779,7 @@ public class PrimitiveStreamDemo {
             DataOutputStream dos = new DataOutputStream(new FileOutputStream("student.dat"));
 
             dos.writeInt(101);
-            dos.writeUTF("Khushbu");
+            dos.writeUTF("Aayushi");
             dos.writeDouble(95.5);
             dos.writeBoolean(true);
 
@@ -1787,6 +1805,8 @@ public class PrimitiveStreamDemo {
     }
 }
 ```
+<img width="236" height="67" alt="image" src="https://github.com/user-attachments/assets/1c86936b-7625-4395-a786-ec7193f2fb1d" />
+
 
 ```
 import java.io.*;
@@ -1814,6 +1834,8 @@ public class CharacterStreamDemo {
     }
 }
 ```
+<img width="220" height="41" alt="image" src="https://github.com/user-attachments/assets/4b3da561-a3f8-468e-8c84-2390874c2a5d" />
+
 
 ```
 import java.io.*;
@@ -1841,6 +1863,8 @@ public class CharFileCopy {
     }
 }
 ```
+<img width="713" height="29" alt="image" src="https://github.com/user-attachments/assets/1730d944-b4c7-4a1e-9668-c8f1075c9d19" />
+
 
 ```
 import java.io.*;
@@ -1868,6 +1892,8 @@ public class ByteFileCopy {
     }
 }
 ```
+<img width="750" height="26" alt="image" src="https://github.com/user-attachments/assets/125f9ba1-56f0-401b-a297-741af10187ab" />
+
 
 ## assi-25
 ```
@@ -1931,6 +1957,7 @@ public class ConceptDemo {
     }
 }
 ```
+<img width="237" height="107" alt="image" src="https://github.com/user-attachments/assets/a2979360-5c8c-410c-9ea8-4e5eb9a3eec4" />
 
 
 
