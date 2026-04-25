@@ -20,6 +20,28 @@
 
 [Program -11 Wap a class with multiple methods to perform matrix operations (tranpose,addition,sum of rows, sum of columns,sum of diagonal)](#assi-11)
 
+[Program-12 Wap using three classes to print 1-100,1-100,1-100 with and without thread and analyse the output and repeat the same program using runnable interface.](#assi-12)
+
+[Program-13 Using the concept of multithreading the output of all three threads must be synchronised (use join method)](#assi-13)
+
+[Program-14 Additon of 2 numbers using swing](#assi-14)
+
+[Program-15 Create one jframe apply 10 buttons on that after clicking on each button a new structure is created.(Circle,oval,rectangle,etc..](#assi-15)
+
+[Program-16 Just using mouse Event create a frame like paint brush with selection of colour and width](#assi-16)
+
+[Program-17 Create a package of any 5 classes of your chocie and import it](#assi-17)
+
+[Program-18 Create one package and one subpackage import and test it](#assi-18)
+
+[Program-19 Create one small array of size 5 and apply array out of bound exception using try catch and give a proper message in catch and demonstrate the exception exactly in the same faishon demonstrate arithmetic exception](#assi-19)
+
+[Program-20 To test the range of age of one student. wap using user defined exception](#assi-20)
+
+[Program-21 File handling programs(given in ppt)](#assi-21)
+
+[Program-22 Inheritance program using interface and abstract classes](#assi-22)
+
 
 
 ## assi-1
