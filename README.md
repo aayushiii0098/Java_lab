@@ -1399,7 +1399,7 @@ public class ShapeButtonsFrame extends JFrame implements ActionListener {
 }
 ```
 
-## assi-20
+## assi-19
 ```
 import javax.swing.*;
 import java.awt.*;
@@ -1548,7 +1548,7 @@ public class PaintBrushApp extends JFrame {
 }
 ```
 
-## assi-21
+## assi-20
 ```
 package mypack;
 
@@ -1604,7 +1604,7 @@ public class TestPackage {
 }
 ```
 
-## assi-22
+## assi-21
 ```
 // in package folder
 package college;
@@ -1637,7 +1637,7 @@ public class TestSubPackage {
 }
 ```
 
-## assi-23
+## assi-22
 ```
 
 public class ExceptionDemo {
@@ -1682,7 +1682,7 @@ public class ExceptionDemo {
 }
 ```
 
-## assi-24
+## assi-23
 ```
 import java.util.Scanner;
 class InvalidAgeException extends Exception {
@@ -1724,7 +1724,7 @@ public class StudentAgeTest {
 }
 ```
 
-## assi-25
+## assi-24
 ```
 import java.io.*;
 
@@ -1869,14 +1869,12 @@ public class ByteFileCopy {
 }
 ```
 
-## assi-26
+## assi-25
 ```
-// -------- INTERFACE --------
 interface Printable {
     void print();
 }
 
-// -------- ABSTRACT CLASS --------
 abstract class Shape {
     abstract void draw();
 
@@ -1885,7 +1883,6 @@ abstract class Shape {
     }
 }
 
-// -------- INHERITANCE --------
 class Animal {
     void eat() {
         System.out.println("Animal eats food.");
@@ -1898,25 +1895,22 @@ class Dog extends Animal {
     }
 }
 
-// -------- CLASS IMPLEMENTING INTERFACE --------
 class Document implements Printable {
     public void print() {
         System.out.println("Printing document using interface.");
     }
 }
 
-// -------- CLASS EXTENDING ABSTRACT CLASS --------
 class Circle extends Shape {
     void draw() {
         System.out.println("Drawing a circle.");
     }
 }
 
-// -------- MAIN CLASS --------
+
 public class ConceptDemo {
     public static void main(String[] args) {
 
-        // Inheritance
         System.out.println("---- INHERITANCE ----");
         Dog d = new Dog();
         d.eat();
@@ -1924,14 +1918,12 @@ public class ConceptDemo {
 
         System.out.println();
 
-        // Interface
         System.out.println("---- INTERFACE ----");
         Document doc = new Document();
         doc.print();
 
         System.out.println();
 
-        // Abstract Class
         System.out.println("---- ABSTRACT CLASS ----");
         Circle c = new Circle();
         c.draw();
